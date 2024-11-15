@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Clear Vision Eye Clinic</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Reach Out to Us</h2>
+            <p>Phone: +1 123-456-7890</p>
+            <p>Email: info@clearvisionclinic.com</p>
+            <p>Address: 123 Clear Vision Road, Eye City, USA</p>
+        </section>
+        <section>
+            <h2>Our Location</h2>
+            <div id="map" style="width: 100%; height: 400px;"></div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Clear Vision Eye Clinic. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Google Maps Script -->
+    <script>
+        function initMap() {
+            const clinicLocation = { lat: 37.7749, lng: -122.4194 }; // Replace with your clinic's actual location
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: clinicLocation,
+            });
+            new google.maps.Marker({
+                position: clinicLocation,
+                map: map,
+            });
+        }
+    </script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>
 
