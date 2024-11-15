@@ -3,35 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eye Clinic</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>SkyView Eye Clinic</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Clear Vision Eye Clinic</h1>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">SkyView Eye Clinic</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#booking" class="btn-primary">Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="doctors.html">Doctors</a>
-        <a href="booking.html">Book Appointment</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section class="hero">
-        <h1>Clear Vision, Brighter Tomorrow</h1>
-        <p>Your trusted partner in eye care and vision health.</p>
-        <button>Book an Appointment</button>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Clearer Vision, Brighter Futures</h1>
+            <p>Your trusted partner in advanced eye care and vision solutions.</p>
+            <a href="#services" class="btn-primary">Explore Services</a>
+        </div>
     </section>
-    <div class="container">
-        <section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At SkyView Eye Clinic, we are committed to providing exceptional eye care tailored to your needs.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
             <h2>Our Services</h2>
-            <p>We provide comprehensive eye care services including LASIK, cataract surgery, and pediatric ophthalmology.</p>
-            <button>Learn More</button>
-        </section>
-    </div>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Comprehensive Eye Exams</h3>
+                    <p>Thorough assessments to ensure optimal eye health.</p>
+                </div>
+                <div class="card">
+                    <h3>Cataract Management</h3>
+                    <p>Expert solutions to maintain clarity of vision.</p>
+                </div>
+                <div class="card">
+                    <h3>Laser Eye Surgery Consultations</h3>
+                    <p>Personalized consultations for corrective surgery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Clear Vision Eye Clinic. All Rights Reserved.</p>
+        <div class="container">
+            <p>© 2024 SkyView Eye Clinic. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
