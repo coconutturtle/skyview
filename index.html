@@ -3,79 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medicare Website</title>
+  <title>Hero Background with AOS Animations</title>
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <!-- AOS CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="bg-primary text-white text-center py-5">
-    <h1>Welcome to Medicare</h1>
-    <p>Your trusted healthcare partner</p>
-  </header>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Medicare</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <!-- Hero Section -->
-  <section class="hero-section text-center text-white" style="background-image: url('images/hero-bg.jpg'); height: 400px; background-size: cover;">
-    <div class="container py-5" data-aos="fade-up">
-      <h1>Quality Healthcare for Everyone</h1>
-      <p>Providing top-notch medical services with care.</p>
-      <a href="#services" class="btn btn-light">Explore Services</a>
+  <section class="hero-section d-flex align-items-center justify-content-center text-white">
+    <div class="container text-center">
+      <h1 data-aos="fade-up">Welcome to Medicare</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Your trusted healthcare partner providing quality services for everyone.</p>
+      <a href="#services" class="btn btn-primary mt-3" data-aos="zoom-in" data-aos-delay="400">Explore Our Services</a>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4" data-aos="fade-up">Our Services</h2>
-      <div class="row">
-        <div class="col-md-4" data-aos="fade-right">
-          <div class="card p-3 text-center">
-            <h4>Primary Care</h4>
-            <p>Comprehensive health check-ups and treatments.</p>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card p-3 text-center">
-            <h4>Specialist Care</h4>
-            <p>Expert medical consultation tailored to your needs.</p>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-left">
-          <div class="card p-3 text-center">
-            <h4>Emergency Services</h4>
-            <p>24/7 emergency care for urgent medical issues.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Medicare. All rights reserved.</p>
-  </footer>
-
-  <!-- Scripts -->
+  <!-- Bootstrap JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Custom JS -->
   <script src="js/scripts.js"></script>
 </body>
 </html>
