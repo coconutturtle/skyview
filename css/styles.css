@@ -65,3 +65,15 @@ body, html {
     transform: scale(1.1); /* Slightly enlarges the button */
   }
   
+  /* Custom styles for navigation links */
+.nav-link:hover {
+    color: #FFD700; /* Gold hover color for links */
+    text-decoration: underline;
+  }
+  
+  /* Custom button hover effect */
+  .btn-light:hover {
+    background-color: #f8f9fa; /* Lighter background */
+    color: #007BFF; /* Blue text */
+  }
+  
