@@ -52,20 +52,27 @@ const doctors = [
 
     <div class="space-y-6">
       <!-- 1) Doctor picker -->
-      <div>
-        <label for="doctor-select" class="block text-sm font-medium">
+      <div class="w-full max-w-xl mb-6">
+        <label for="doctor-select" class="block text-sm font-medium mb-1 text-gray-700">
           Select a Doctor
         </label>
         <select
           id="doctor-select"
-          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm
-                 focus:border-blue-500 focus:ring focus:ring-blue-200 transition"
+          class="
+            block w-full
+            bg-white text-gray-800
+            border border-gray-300
+            rounded-md shadow-sm
+            focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500
+            transition
+          "
         >
-          {doctors.map(doc => (
+          {doctors.map((doc) => (
             <option value={doc.url}>{doc.name}</option>
           ))}
         </select>
       </div>
+      
 
       <!-- 2) Embedded booking iframe -->
       <div class="relative w-full pb-[56.25%] overflow-hidden rounded-lg shadow-lg">
