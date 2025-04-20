@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Skyview Eye Clinic — Excellence in Vision Care',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,78 +25,72 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Book Appointment',
+        href: '/booking',
+        target: '_self',
+        icon: 'tabler:calendar-event',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Explore Services', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Skyview Clinic reception area' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
+      Clear Vision. Compassionate Care.
+      <span class="hidden xl:inline"> Trusted Eye Experts</span>
+      <span class="text-accent dark:text-white"> at Skyview Clinic</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+        <span class="font-semibold">Skyview Eye Clinic</span> provides advanced diagnostics and personalized treatments —
+        from checkups to surgery.
+      </span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Now accepting new patients</span>
+      Walk in or book online. World-class eye care, close to home.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <Note title="Our Approach:" description="Personalized care, advanced diagnostics, and lifelong eye health support." />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="Services"
+    title="What You Get at Skyview Eye Clinic"
+    subtitle="Comprehensive care, advanced technology, and a compassionate team — all dedicated to your eye health."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+        title: 'Comprehensive Eye Exams',
+        description: 'In-depth vision and eye health assessments tailored to your unique needs.',
+        icon: 'tabler:eye',
       },
       {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+        title: 'Cataract Evaluation & Care',
+        description: 'Diagnosis, pre-op planning, and post-op follow-up for cataract patients.',
+        icon: 'tabler:surgical-mask',
       },
       {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+        title: 'Pediatric Eye Care',
+        description: 'Gentle exams and treatments for infants, children, and teens.',
+        icon: 'tabler:child',
       },
       {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+        title: 'Surgical Consultations',
+        description: 'Expert guidance on LASIK, cataract, and glaucoma surgeries.',
+        icon: 'tabler:scissors',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+        title: 'Urgent Care for Eye Injuries',
+        description: 'Prompt evaluation and treatment of sudden eye problems or trauma.',
+        icon: 'tabler:alert-triangle',
       },
       {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+        title: 'Vision Therapy & Follow-up',
+        description: 'Ongoing support for vision correction and post-surgical recovery.',
+        icon: 'tabler:repeat',
       },
     ]}
   />
@@ -105,39 +99,42 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Our Philosophy"
+    title="Where Clarity Meets Compassionate Care"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Personalized Attention',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Every patient receives one-on-one care tailored to their needs and lifestyle.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Modern Technology',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'We use the latest diagnostic tools for early detection and accurate treatment.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Patient Education',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'We empower you with the knowledge to make informed decisions about your vision.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1588776814546-ec7e4c0e9a66?auto=format&fit=crop&w=2070&q=80',
+      alt: 'Doctor explaining eye scan',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Eye Care with Heart
+      </h3>
+      Experience a patient-first approach backed by advanced diagnostics.
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
 
   <!-- Content Widget **************** -->
 
@@ -145,36 +142,39 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Comfortable, Modern Clinic',
+        description: `Clean, welcoming spaces designed with your experience in mind.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Thorough Eye Exams',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'We take our time to assess and explain your eye health in detail.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Timely Care',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          'Efficient service and flexible scheduling, with minimal wait times.',
       },
       {
-        title: 'Integration of media',
+        title: 'Holistic Eye Health',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'We address everything from nutrition and lifestyle to advanced treatment plans.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: 'https://images.unsplash.com/photo-1588777068854-4785202b5a19?auto=format&fit=crop&w=2070&q=80',
+      alt: 'Modern eye care clinic',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">
+      Expect attentive service, every step of the way.
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
 
   <!-- Content Widget **************** -->
 
@@ -183,127 +183,128 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Trusted by Families',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'From first eye checks to senior care, we’re here for every generation.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Transparent Communication',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'We explain conditions and treatment options in clear, everyday language.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Follow-up and Support',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Ongoing care doesn’t end after your visit — we’re available when you need us.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Community-Centered',
+        description:
+          `Locally owned and operated. We're proud to serve our neighbors.`,
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'https://images.unsplash.com/photo-1579154204601-015f46f90d94?auto=format&fit=crop&w=2070&q=80',
+      alt: 'Happy patients after eye exams',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">
+      We build trust through care, clarity, and results.
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Your Eye Care Journey at Skyview is Simple and Seamless"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Book Your Appointment</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "Use our easy online system to schedule a visit — no referral needed. Choose a time that works for you, and you're all set.",
+        icon: 'tabler:calendar-event',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Meet Your Specialist</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "Our team will guide you through a thorough eye exam, answer your questions, and discuss next steps if needed.",
+        icon: 'tabler:stethoscope',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Get Personalized Care</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          "Whether it's new lenses, follow-up, or surgery planning, we tailor everything to your needs and lifestyle.",
+        icon: 'tabler:heart-handshake',
       },
       {
-        title: 'Ready!',
+        title: 'That’s it!',
+        description: 'Clear vision, compassionate care — from start to finish.',
         icon: 'tabler:check',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1588776814219-3c7b5921e27f?auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps of eye care',
     }}
   />
+
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="What Makes Skyview Different"
+    subtitle="We combine modern eye care with human-centered service"
+    tagline="Our Strengths"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: 'Experienced Doctors',
+        description: 'Board-certified specialists with decades of combined experience in eye health and surgery.',
+        icon: 'flat-color-icons:manager',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+        title: 'Modern Equipment',
+        description: 'We use cutting-edge diagnostic and imaging tools for accurate, early detection.',
+        icon: 'flat-color-icons:engineering',
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+        title: 'Warm, Friendly Staff',
+        description: 'Our team makes you feel at home — from reception to follow-up.',
+        icon: 'flat-color-icons:collaboration',
       },
       {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+        title: 'Family-Friendly Care',
+        description: 'From kids to seniors, we adapt our approach for every age group.',
+        icon: 'flat-color-icons:family',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        title: 'Clear Communication',
+        description: 'We take the time to explain your condition and treatment options in plain language.',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
+        title: 'Easy Online Booking',
+        description: 'Schedule appointments from your phone or laptop — anytime, anywhere.',
+        icon: 'flat-color-icons:calendar',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+        title: 'Follow-up Support',
+        description: 'Post-visit care and reminders ensure your treatment continues smoothly.',
+        icon: 'flat-color-icons:refresh',
+      },
+      {
+        title: 'Central Location',
+        description: 'Conveniently located and easily accessible by public or private transport.',
+        icon: 'flat-color-icons:marker',
+      },
+      {
+        title: 'Trusted by the Community',
+        description: 'Hundreds of happy patients and glowing reviews speak for themselves.',
+        icon: 'flat-color-icons:like',
       },
     ]}
   >
@@ -312,67 +313,70 @@ const metadata = {
     </Fragment>
   </Features2>
 
+
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="From the Eye Health Blog"
+    information={`Explore tips and expert advice on keeping your eyes healthy at every age.
+                  From screen-time guidance to post-surgery care — our articles are here to help you see clearly and live comfortably.`}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Answers to common questions about appointments, exams, and clinic services."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Do I need a referral to book an eye exam?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'No referral is needed. You can book directly through our website or by phone. We welcome both new and returning patients.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'What should I bring to my appointment?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Please bring your ID, any current glasses or prescriptions, and your insurance information if applicable.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Do you offer pediatric eye care?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Yes! We provide gentle and thorough eye exams for children as young as 3 years old.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'How long does an eye exam take?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'Most standard exams take 30–45 minutes. Specialized assessments or dilated exams may take longer.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'Where is the clinic located?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'Shanthi Eye Clinic and Surgery is conveniently located in Johor Bahru, Malaysia. View our map on the Contact page or search us on Google Maps.',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'What services do you offer?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'We specialize in comprehensive eye exams, cataract evaluations, glaucoma management, and pediatric eye care.',
       },
     ]}
   />
+
+
 
   <!-- Stats Widget ****************** -->
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Patients Served', amount: '4,000+' },
+      { title: 'Years in Practice', amount: '15+' },
+      { title: 'Surgeries Performed', amount: '800+' },
+      { title: 'Annual Consultations', amount: '300–500' },
     ]}
   />
+
+
 
   <!-- CallToAction Widget *********** -->
 
@@ -380,20 +384,20 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Book Your Appointment',
+        href: '/booking',
+        target: '_self',
+        icon: 'tabler:calendar-event',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Clearer Vision Starts&nbsp;Here<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">at Skyview Clinic</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Take the first step toward better eye health today.<br class="hidden md:inline" />
+      Simple booking, expert care, and a team that puts you first.
     </Fragment>
   </CallToAction>
 </Layout>
