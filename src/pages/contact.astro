@@ -7,6 +7,12 @@ import Features2 from '~/components/widgets/Features2.astro';
 const metadata = {
   title: 'Contact',
 };
+
+const doctors = [
+  { name: 'Dr. Shanthi Subramaniam', url: 'https://clinic.platomedical.com/book/ZHJnYW5lc2g=/1ce462e2232c40619f459ca02896a02a/Y0ZLJt3' },
+  { name: 'Dr. Bob Jones',   url: 'https://clinic.platomedical.com/book/.../BobURL'   },
+  // …and so on for each doctor link you have
+];
 ---
 
 <Layout metadata={metadata}>
@@ -40,6 +46,39 @@ const metadata = {
     description="Our support team typically responds within 24 business hours."
   />
 
+   <!-- Booking Widget Section -->
+   <section class="mt-16 container mx-auto px-4 animate-fadeIn">
+    <h2 class="text-2xl font-bold mb-4">Book an Appointment</h2>
+
+    <div class="space-y-6">
+      <!-- 1) Doctor picker -->
+      <div>
+        <label for="doctor-select" class="block text-sm font-medium">
+          Select a Doctor
+        </label>
+        <select
+          id="doctor-select"
+          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm
+                 focus:border-blue-500 focus:ring focus:ring-blue-200 transition"
+        >
+          {doctors.map(doc => (
+            <option value={doc.url}>{doc.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <!-- 2) Embedded booking iframe -->
+      <div class="relative w-full pb-[56.25%] overflow-hidden rounded-lg shadow-lg">
+        <iframe
+          id="booking-iframe"
+          src={doctors[0].url}
+          class="absolute top-0 left-0 w-full h-full border-0"
+          allowfullscreen
+        />
+      </div>
+    </div>
+  </section>
+  
   <!-- Features2 Widget ************** -->
 
   <Features2
@@ -76,4 +115,25 @@ const metadata = {
       },
     ]}
   />
+
+  <script type="module" client:load>
+    const select  = document.getElementById('doctor-select');
+    const iframe  = document.getElementById('booking-iframe');
+
+    select.addEventListener('change', (e) => {
+      // fade out (optional – match your theme’s class names)
+      iframe.classList.add('opacity-0', 'transition-opacity', 'duration-300');
+
+      // swap URL
+      iframe.src = e.target.value;
+
+      // when new booking page loads, fade back in
+      iframe.addEventListener('load', function onLoad() {
+        iframe.removeEventListener('load', onLoad);
+        iframe.classList.remove('opacity-0');
+      });
+    });
+  </script>
+
+
 </Layout>
